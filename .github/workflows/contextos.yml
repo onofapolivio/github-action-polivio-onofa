@@ -1,0 +1,11 @@
+name: Contexto en Github Actions
+on:
+  workflow_dispatch:
+
+jobs:
+  prueba:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Mostrar nombre evento Push pull_request
+        run: echo ${{ github.event_name }}
