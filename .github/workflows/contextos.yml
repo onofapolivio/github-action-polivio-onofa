@@ -24,3 +24,5 @@ jobs:
       # name: Contexto en Github Actions
       - name: Accediendo a secret
         run: echo ${{ secrets.PASSWORD }}
+      - name: Accediendo a variable entorno
+        run: echo ${{ env.USUARIO }}
