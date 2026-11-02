@@ -1,7 +1,7 @@
 name: Contexto en Github Actions
 on:
-  issues:
-  #workflow_dispatch:
+  #issues:
+  workflow_dispatch:
 
 env:
     AMBIENTE: produccion    
@@ -19,7 +19,8 @@ jobs:
         run: echo ${{ github.ref }}
       - name: Mostar owner repositorio
         run: echo ${{ github.repository }}
-      - name: Mostar Titulo del issue
-        run: echo ${{ github.event.issue.title }}
-      - name: Mostra el ambiente
-        run: echo ${{ env.AMBIENTE }}
+      #- name: Mostar Titulo del issue
+      #run: echo ${{ github.event.issue.title }}
+      # name: Contexto en Github Actions
+      - name: Accediendo a secret
+        run: echo ${{ secrets.PASSWORD }}
