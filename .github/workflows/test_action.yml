@@ -1,0 +1,12 @@
+name: Trigger-Dispatch
+on: 
+  workflow_dispatch          
+  
+jobs:
+
+  demo:
+  
+    runs-on: ubuntu-latest
+    steps:              
+      - name: Saludar
+        run: echo "Hola"      
