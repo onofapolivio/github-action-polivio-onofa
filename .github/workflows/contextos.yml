@@ -3,6 +3,9 @@ on:
   issues:
   #workflow_dispatch:
 
+env:
+    AMBIENTE: produccion    
+
 jobs:
   prueba:
     runs-on: ubuntu-latest
@@ -18,3 +21,5 @@ jobs:
         run: echo ${{ github.repository }}
       - name: Mostar Titulo del issue
         run: echo ${{ github.event.issue.title }}
+      - name: Mostra el ambiente
+        run: echo ${{ env.AMBIENTE }}
