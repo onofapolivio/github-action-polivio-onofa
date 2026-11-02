@@ -1,6 +1,7 @@
 name: Contexto en Github Actions
 on:
-  workflow_dispatch:
+  issues:
+  #workflow_dispatch:
 
 jobs:
   prueba:
@@ -15,5 +16,5 @@ jobs:
         run: echo ${{ github.ref }}
       - name: Mostar owner repositorio
         run: echo ${{ github.repository }}
-      #- name: Mostar Titulo del issue
-      #run: echo ${{ github.event.issue.title }}
+      - name: Mostar Titulo del issue
+        run: echo ${{ github.event.issue.title }}
