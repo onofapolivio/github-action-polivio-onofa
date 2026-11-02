@@ -25,4 +25,4 @@ jobs:
       - name: Accediendo a secret
         run: echo ${{ secrets.PASSWORD }}
       - name: Accediendo a variable entorno
-        run: echo ${{ env.USUARIO }}
+        run: echo ${{ vars.USUARIO }}
