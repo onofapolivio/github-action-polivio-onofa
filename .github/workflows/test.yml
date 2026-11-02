@@ -23,3 +23,7 @@ jobs:
         uses: mguazzaroni/github-action-matias-guazzaroni@main
         with: 
             nombre: Matias
+      - name: Fabian Action
+        uses: fabiancapellino-tradify/mi-primera-github-action@main
+        with: 
+            nombre: Fabian
